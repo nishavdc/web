@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+    <title>
+    My css website
+</title>
+    </head>
+<body>
+    <nav>
+    <ul class="TopNav" id="DropDownClick">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#News">News</a></li>
+        <li class="TopNav-right"><a href="#Sign Up">Sign In</a></li>
+        <li class="TopNav-right"><a href="#Sign In">Sign Up</a></li>
+        <li class="DropDownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li> <!--unicodes-->
+    </ul>
+</nav>  
+  <div class="container" id="section1gradient">  
+   <div class="row">
+<div class="col-6">
+<div class="LeftSideCol">
+    <h1 class="large">Crazy Radness </h1>
+    <h1 class="large"> Made for developers</h1>
+</div>
+    <form>
+    <div class="LeftSideCol">
+        <h2>Username</h2>
+        <input class="InputBox" type="text" placeholder="Username" name="Username">
+        <h2>Password</h2>
+        <input class="InputBox" type="text" placeholder="Password" name="Password">
+        </div>
+    </form>
+</div>
+<div class="col-6">    
+<div class="rightsidecol">
+    <div class="videocontainer">
+ <iframe width="500" height="315" src="https://www.youtube.com/embed/rYeSA1vgIUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </div>    
+</div>
+</div>
+</div>
+    
+    
+ <header>
+    <h1 class="section2header">The standards of awesomeness</h1>
+</header> 
+    
+<div class="container">
+ <div class="row">
+  <div class="col-4">
+   <div class="box">
+    <div class="icon">
+       <img src="wallpaper.jpeg">
+    </div>
+    <label>Chat with me</label>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p> <!--lorem ipsum -->
+   </div>
+  </div>
+     <div class="col-4">
+   <div class="box">
+    <div class="icon">
+       <img src="wallpaper.jpeg">
+    </div>
+    <label>Learn to code</label>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+   </div>
+  </div>
+     <div class="col-4">
+   <div class="box">
+    <div class="icon">
+       <img src="wallpaper.jpeg">
+    </div>
+    <label>Build an empire</label>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+   </div>
+  </div>
+ </div>
+</div>
+    
+<script>
+function dropdownMenu()
+ {
+     var x = document.getElementById("DropDownClick");
+     if(x.className === "TopNav")
+         {
+             x.className += " responsive";
+//             change TopNav to TopNav.responsive.
+         }
+     else
+         {
+             x.className = "TopNav";
+         }
+ }   
+    
+</script>   
+    </body>
+</html>
